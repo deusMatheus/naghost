@@ -3,6 +3,7 @@
     --font-color: #f1f1f1;
     --shadow-color: #6ec6e0;
     --transparent-color: #0009;
+    --reverse-transp-color: #ddd9;
     --highlight-color: #92863f;
 }
 
@@ -45,21 +46,21 @@ li {
     overflow-y: scroll;
     overflow-x: scroll;
     height: 75vh;
-    width: 100vw;
+    width: 100%;
 
 }
 
 .background-image {
     position: absolute;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     top: 0;
     z-index: -99;
 }
 
 .header-logo {
-    margin-right: 15vh;
-    margin-left: 15vh;
+    margin-right: 30vw;
+    margin-left: 30vw;
     display: inline;
     width: 30vh;
 }
@@ -69,21 +70,38 @@ li {
 }
 
 .header-text {
+    background-color: var(--reverse-transp-color);
+    border-radius: .5rem;
     list-style-type: none;
     position: absolute;
     display: flex;
     min-width: 1rem;
     margin-top: 3rem;
-    padding-top: 1rem;
+    padding-top: .8rem;
+    padding-bottom: .2rem;
+    margin-left: .6rem;
+    padding-left: .5rem;
+    margin-right: .6rem;
+    padding-right: .5rem;
 }
 
 .navigation-bar {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+/*(    background-color: var(--transparent-color); */
 }
 
+.navigation-bar-bg-color {
+    position: relative;
+    background-color: var(--transparent-color);
+    border-radius: 9px;
+    margin-bottom: 1rem;
+}
+
+/*
 .navigation-bar-image{
 }
+*/
 
 .navigation-bar-list{
     list-style-type: none;
@@ -128,7 +146,8 @@ li {
     border: solid 1px var(--shadow-color);
     border-radius: 5px;
     max-height: 90vh;
-    max-width: fit-content;
+    width: 80vw;
+    max-width: 80vw;
 }
 
 .gallery-unnordered-list {
@@ -197,11 +216,6 @@ li {
     font-size: 1vw;
     font-style: italic;
     filter: brightness(.7);
-}
-
-.image-gallery{
-    width: 85vw;
-    margin-left: 7vw;
 }
 
 .band-image-about{
@@ -302,6 +316,8 @@ li {
 }
 
 .contact-section {
+    background-color: var(--transparent-color);
+    border-radius: .5rem;
     margin-right: 10vw;
     margin-left: 10vw;
     padding-right: 10vw;
@@ -314,6 +330,13 @@ li {
     -.5px .5px var(--shadow-color),
     -.5px -.5px var(--shadow-color);
 
+}
+
+.image-gallery-li {
+    position: relative;
+    display: block;
+    margin-left: 250vw;
+    margin-right: 200vw;
 }
 
 #back-button-gallery {
