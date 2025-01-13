@@ -25,8 +25,8 @@ header {
 }
 
 li {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .background {
@@ -39,14 +39,16 @@ li {
 
 .foreground {
     position: relative;
+    max-height: 30vh;
 }
 
 .rollable_page {
     position: absolute;
     overflow-y: scroll;
     overflow-x: scroll;
-    height: 75vh;
-    width: 100%;
+    height: 95vh;
+    width: 95vw;
+    margin-left: 2.5vw;
 
 }
 
@@ -121,6 +123,12 @@ li {
 }
 
 .navigation-item {
+    border-style: groove;
+    border-color: var(--transparent-color);
+    background-color: var(--transparent-color);
+    border-radius: 9px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     width: 30vw;
     font-size: 1rem;
 }
@@ -145,25 +153,28 @@ li {
 .image-gallery {
     border: solid 1px var(--shadow-color);
     border-radius: 5px;
-    max-height: 90vh;
-    width: 80vw;
-    max-width: 80vw;
+    max-height: 70vh;
+    max-width: 70vw;
 }
 
 .gallery-unnordered-list {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     list-style-type: none;
     justify-content: center;
-    margin-right: 40px;
+}
+
+.gallery-unnordered-list {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .change-button-gallery {
-    margin-left: 7vw;
     border: solid .1px var(--font-color);
     border-radius: 20px;
-    font-size: 5vw;
+    font-size: 7vw;
     background-color: var(--transparent-color);
     color: var(--shadow-color);
 }
@@ -213,13 +224,16 @@ li {
 }
 
 .image_sub{
-    font-size: 1vw;
+    background-color: var(--transparent-color);
+    font-size: 2.5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
     font-style: italic;
     filter: brightness(.7);
 }
 
 .band-image-about{
-    width: 80vw;
+    height: 50vh;
 }
 
 .about-text-div, .about-art-div-position {
@@ -239,7 +253,8 @@ li {
     background-color: var(--transparent-color);
     text-align: justify;
     overflow: scroll;
-    height: 25vh;
+    height: 50vh;
+    white-space: pre-wrap;
 }
 
 .button-next-text {
@@ -297,14 +312,13 @@ li {
 }  
 
 .about-art-div-container{
-    margin-left: 5vw;
+    margin-left: 0;
     border: solid .1px var(--transparent-color);
     border-radius: 3px;
     background-color: var(--transparent-color);
     text-align: center;
     justify-content: center;
     height: 35vw;
-    width: 70vw;
 }
 
 .image-art-slide-show{
@@ -335,18 +349,16 @@ li {
 .image-gallery-li {
     position: relative;
     display: block;
-    margin-left: 250vw;
-    margin-right: 200vw;
 }
 
 #back-button-gallery {
     position: absolute;
     display: inline-block;
-    margin-right: 90vw ;
+    margin-right: 77vw;
 }
 
 #next-button-gallery {
     position: absolute;
     display: inline-block;
-    margin-left: 90vw ;
+    margin-left: 77vw ;
 }

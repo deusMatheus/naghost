@@ -1,4 +1,4 @@
-let numberOfTexts = 6;
+let numberOfTexts = 3;
 let actualText = 1;
 
 let currentSlide = 1;
